@@ -2,19 +2,18 @@ package com.cas.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
-
-
-
 
 @Entity
 @Table(name ="tbl_PNRInfo",schema = "pnr")
 public class PnrDTO {
 
-	@Column(name="PnrSearch")
+	@Id
+	@Column(name="pnrsearch")
 	private String pnrloc;
 	
-    @Column(name="Name")
+    @Column(name="name")
 	private String Name;
 
 
